@@ -1,12 +1,12 @@
-
-import game.server.*;
+//import nju.zc.calabashbattle.server.*;
 public class Main {
+    /*
     public static void main(String[] args) {
         try{
-            Server server = new Server();
+            ServerMain server = new ServerMain();
             server.on();
         }catch(Exception e){
             e.printStackTrace();
         }
-    }
+    }*/
 }

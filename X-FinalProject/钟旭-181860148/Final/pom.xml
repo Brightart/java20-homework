@@ -116,7 +116,7 @@
               <goal>report</goal>
             </goals>
           </execution>
-          <execution>
+          <!---<execution>
             <id>check-unit-test</id>
             <phase>test</phase>
             <goals>
@@ -162,7 +162,7 @@
                 </rule>
               </rules>
             </configuration>
-          </execution>
+          </execution>-->
         </executions>
       </plugin>
       <plugin>
@@ -178,7 +178,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>Main</mainClass>
+                  <mainClass>nju.zc.calabashbattle.server.ServerMain</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -192,8 +192,10 @@
 			  <directory>src/main/java</directory>
 			  <includes>
 			  	<include>**/*.properties</include>
-			  	<include>**/*.fxml</include>
-				  <include>**/fxml/*.fxml</include>
+          <include>**/*.fxml</include>
+          <include>**/*.png</include>
+          <include>**/Image/*.png</include>
+				  <include>**/Fxml/*.fxml</include>
 				<!-- 如果想要弄个包名专门放fxml文件，像上一行这样添加设置 -->
 				<!-- 之后，使用getResource("fxml/xx.fxml")这样子 -->
 			  </includes>
